@@ -27,7 +27,7 @@ class Application
        if @@items.find do |i|
          i == search_term
         end
-       @@cart << search_term
+       @@items << search_term
      else
        resp.write "We don't have that item."
      end
