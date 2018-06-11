@@ -22,10 +22,10 @@ class Application
         resp.write "#{item}\n"
       end
     end
-  elsif req.path.match(/add/)
+    elsif req.path.match(/add/)
       search_term = req.params["item"]
-       if @@items.each do |i|
-         i == search_term
+       if @@items.find do |i|
+         i 
        end
        @@cart << search_term
      else
