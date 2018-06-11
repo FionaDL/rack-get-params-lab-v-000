@@ -29,7 +29,9 @@ class Application
        end
        @@cart << search_term
      else
-    else  
+       "Error"
+     end
+    else
       resp.write "Path Not Found"
     end
 
